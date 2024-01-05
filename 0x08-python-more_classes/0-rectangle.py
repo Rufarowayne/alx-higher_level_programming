@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""in a class of rectangle that dined the rectangle"""
+
+
 class Rectangle:
-    """ Empty class """
-    pass
+    """define rectangle"""
+    passs
