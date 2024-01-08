@@ -1,0 +1,39 @@
+Defines test cases for the ``add_integer`` function
+
+>>> add_integer = __import__("0-add_integer").add_integer
+>>> add_integer(1, 2)
+3
+>>> add_integer(1)
+99
+>>> add_integer(-1, 5)
+4
+>>> add_integer("one", 2)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> add_integer(1, "two")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+>>> add_integer("one", "two")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> add_integer(None)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> add_integer(50.98, 5)
+55
+>>> add_integer(float('nan'), 5)
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
+>>> add_integer(float('inf'), 2)
+256
+>>> add_integer(4, float('inf'))
+256
+>>> add_integer(-float('inf'), 2)
+-5
+>>> add_integer(4, -float('inf'))
+-5
